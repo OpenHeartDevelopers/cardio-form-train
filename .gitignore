@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.cache/
+.DS_Store
+
+# Claude Code context (local only)
+.claude/
+CLAUDE.md
+
+# Server layout: real paths and cohort details. Commit only the .example file.
+config/server.yaml
+
+# Generated artifacts: weights bundles, evaluation results, logs
+outputs/
+
+# Weights and imaging data must never enter this public repo
+*.pth
+*.zip
+*.nii
+*.nii.gz

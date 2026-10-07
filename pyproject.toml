@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cardio-form-train"
+version = "0.1.0"
+description = "Package, validate and evaluate model weights for cardio-form."
+requires-python = ">=3.9"
+# The scientific stack (numpy 1.24.4, torch, nnunetv2) comes from the conda
+# env; see README. cardio-form is not on PyPI, so it is pinned to a git tag.
+# A URL pins one exact tag; to upgrade, change the tag here.
+dependencies = [
+    "cardio-form @ git+https://github.com/OpenHeartDevelopers/cardio-form@v0.4.3",
+    "pycemrg",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
