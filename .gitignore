@@ -9,7 +9,7 @@ env/
 .DS_Store
 
 # Claude Code context (local only)
-.claude/
+.claude
 CLAUDE.md
 
 # Server layout: real paths and cohort details. Commit only the .example file.
